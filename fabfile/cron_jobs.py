@@ -3,6 +3,7 @@
 """
 Cron jobs
 """
+import app_config
 import json
 import logging
 import os
@@ -12,9 +13,6 @@ from datetime import datetime
 from fabric.api import local, require, task
 from lxml import etree
 from pyquery import PyQuery as pq
-
-
-import app_config
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)
