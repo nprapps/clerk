@@ -2,7 +2,7 @@
 
 ## What is this?
 
-**TKTK: Describe clerk here.**
+**Clerk is a cron job that posts to a Slack webhook whenever new action happens on the House floor. It pulls from the [official House clerk](http://clerk.house.gov/floorsummary/floor.aspx) XML feed**
 
 ## Assumptions
 
@@ -37,6 +37,10 @@ pip install -r requirements.txt
 Project secrets should **never** be stored in ``app_config.py`` or anywhere else in the repository. They will be leaked to the client if you do. Instead, always store passwords, keys, etc. in environment variables and document that they are needed here in the README.
 
 Any environment variable that starts with ``$PROJECT_SLUG_`` will be automatically loaded when ``app_config.get_secrets()`` is called.
+
+## Connecting to Slack
+
+To connect Clerk to your Slack, you will need to create an [incoming webhook](https://api.slack.com/incoming-webhooks) and copy the webhook endpoint to an environment variable called `clerk_WEBHOOK`.
 
 ## Deploy to EC2
 
