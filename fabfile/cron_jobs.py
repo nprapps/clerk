@@ -75,6 +75,8 @@ def get_new_actions():
         attachment = build_attachment(data)
         attachments.append(attachment)
 
+    # reverse order of attachments so it appears chronologically
+    attachments.reverse()
     return {
         'text': 'New action in the House',
         'attachments': attachments
