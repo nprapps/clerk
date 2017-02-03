@@ -9,7 +9,7 @@
 The following things are assumed to be true in this documentation.
 
 * You are running OSX.
-* You are using Python 2.7. (Probably the version that came OSX.)
+* You are using Python 3.
 * You have [virtualenv](https://pypi.python.org/pypi/virtualenv) and [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper) installed and working.
 
 For more details our stack, see our [development environment blog post](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html).
@@ -41,6 +41,10 @@ Any environment variable that starts with ``$PROJECT_SLUG_`` will be automatical
 ## Connecting to Slack
 
 To connect Clerk to your Slack, you will need to create an [incoming webhook](https://api.slack.com/incoming-webhooks) and copy the webhook endpoint to an environment variable called `clerk_WEBHOOK`.
+
+## Setting up servers
+
+Use the server configuration in [app_config.py](https://github.com/nprapps/cron-starter-kit/blob/master/app_config.py#L42-L46) to set up your servers correctly. You can set the user, python version, and the folders where various pieces install.
 
 ## Deploy to EC2
 
