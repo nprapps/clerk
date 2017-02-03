@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 TIMESTAMP_STORAGE_FILE = 'data/house-timestamp.txt'
-# WEBHOOK = app_config.get_secrets()['WEBHOOK']
+WEBHOOK = app_config.get_secrets()['WEBHOOK']
 URL = 'http://clerk.house.gov/floorsummary/Download.aspx?file={0}.xml'
 
 @task
