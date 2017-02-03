@@ -44,7 +44,7 @@ To connect Clerk to your Slack, you will need to create an [incoming webhook](ht
 
 ## Setting up servers
 
-Use the server configuration in [app_config.py](https://github.com/nprapps/cron-starter-kit/blob/master/app_config.py#L42-L46) to set up your servers correctly. You can set the user, python version, and the folders where various pieces install.
+Use the server configuration in [app_config.py](https://github.com/nprapps/clerk/blob/master/app_config.py#L36-L46) to set up your servers correctly. You can set the user, python version, and the folders where various pieces install.
 
 ## Deploy to EC2
 
