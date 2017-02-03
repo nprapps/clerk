@@ -40,7 +40,7 @@ Any environment variable that starts with ``$PROJECT_SLUG_`` will be automatical
 
 ## Connecting to Slack
 
-To connect Clerk to your Slack, you will need to create an [incoming webhook](https://api.slack.com/incoming-webhooks) and copy the webhook endpoint to an environment variable called `clerk_WEBHOOK`.
+To connect Clerk to your Slack, you will need to create an [incoming webhook](https://api.slack.com/incoming-webhooks) and copy the webhook endpoint to an environment variable called `clerk_WEBHOOK`. The default server setup expects the environment variable to be placed in `/etc/environment`.
 
 ## Setting up servers
 
